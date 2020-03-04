@@ -3,7 +3,7 @@ import Particles from "react-particles-js";
 import Raindrop from "../pictures/icons/drop2.svg";
 
 const style = {
-  width: "100%",
+  width: "80%",
   height: "100%",
   position: "fixed",
   zIndex: "-1"
