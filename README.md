@@ -1,4 +1,4 @@
-An Project from Wild Code School studendts.
+An Project from Wild Code School studends.
 
 Mission: ->The intention of this App is to give the user access to a personalized weather app.
 
