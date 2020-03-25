@@ -15,41 +15,18 @@ function Rain() {
       <Particles
         params={{
           particles: {
-            number: {
-              value: 50,
-              density: {
-                enable: false
-              }
-            },
-            size: {
-              value: 3,
-              random: false
-            },
-            move: {
-              direction: "bottom",
-              out_mode: "out",
-              speed: 60
-            },
+            number: { value: 50, density: { enable: false } },
+            size: { value: 3, random: false },
+            move: { direction: "bottom", out_mode: "out", speed: 60 },
             shape: {
               type: "images",
               images: [{ src: Raindrop, height: 60, width: 20 }]
             },
-            line_linked: {
-              enable: false
-            }
+            line_linked: { enable: false }
           },
           interactivity: {
-            events: {
-              onclick: {
-                enable: true,
-                mode: "remove"
-              }
-            },
-            modes: {
-              remove: {
-                particles_nb: 10
-              }
-            }
+            events: { onclick: { enable: true, mode: "remove" } },
+            modes: { remove: { particles_nb: 10 } }
           }
         }}
       />
