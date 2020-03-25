@@ -6,8 +6,35 @@
   padding: 15px;
 }
 
+.header-logo {
+  height: 4em;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
 .navbarIcon {
-  margin: 10px;
-  padding: 5px;
-  min-height: 40px;
+  height: 50px;
+}
+.header-logo:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.header-effect {
+  animation-name: slide-bottom;
+  animation-duration: 5s;
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
 }
