@@ -1,5 +1,4 @@
 import React from "react";
-// import SignInSide from "../Component/SignInSide";
 import WeatherDisplay from "../Component/WeatherDisplay.js";
 import "../css/Frontpage.css";
 import HistoricalWeather from "./HistoricalFront/HistoricalWeather";
@@ -76,7 +75,7 @@ class Frontpage extends React.Component {
       onlyStatistics: !prevState.onlyStatistics
     }));
   };
-
+iu
   // get API function for current weather
   getWeather() {
     fetch(

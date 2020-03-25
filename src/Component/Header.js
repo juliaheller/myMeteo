@@ -7,6 +7,7 @@ import "../css/Header.css";
 import { Link } from "react-router-dom";
 import Colors from "../utils/Colors";
 import statisticIcon from "../pictures/icons/statisticIcon.svg";
+
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
@@ -36,11 +37,9 @@ export default function Header({ clickStats }) {
     <AppBar position="static" className={classes.backColor}>
       <div className={classes.root + "header-effect"}>
         <div className="button-statitics">
-          <span>
-            <svg onClick={() => clickStats()}>
-              <image className="navbarIcon" xlinkHref={statisticIcon}></image>
-            </svg>
-          </span>
+          <svg onClick={() => clickStats()}>
+            <image className="navbarIcon" xlinkHref={statisticIcon}></image>
+          </svg>
         </div>
       </div>
       <Toolbar variant="dense">
