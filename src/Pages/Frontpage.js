@@ -1,13 +1,15 @@
-import React from "react";
-// import SignInSide from "../Component/SignInSide";
-import WeatherDisplay from "../Component/WeatherDisplay.js";
 import "../css/Frontpage.css";
-import HistoricalWeather from "./HistoricalFront/HistoricalWeather";
 import "../css/index.css";
-import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
+import React from "react";
+import { toast, ToastContainer } from "react-toastify";
+
 import Animation from "../Component/Animation";
+import WeatherDisplay from "../Component/WeatherDisplay.js";
+
 import Header from "./../Component/Header";
+import HistoricalWeather from "./HistoricalFront/HistoricalWeather";
 
 class Frontpage extends React.Component {
   constructor() {
@@ -36,7 +38,8 @@ class Frontpage extends React.Component {
 
     ///  call function for geolocation
     this.getCityNameFromIp();
-    this.getWeather(); /*gave different name to differenciate the api fetches better*/
+    this.getWeather(); /*gave different name to differenciate the api fetches
+                          better*/
   }
 
   // change location based on user's input
@@ -62,9 +65,7 @@ class Frontpage extends React.Component {
         }
       })
       .then(result => {
-        this.setState({
-          citySearch: result.city
-        });
+        this.setState({ citySearch: result.city });
       })
       .then(result => this.getWeather());
   }
@@ -72,11 +73,9 @@ class Frontpage extends React.Component {
   // function on click of statistic button in HistoricalWeather
   clickStats = () => {
     console.log("clickstats");
-    this.setState(prevState => ({
-      onlyStatistics: !prevState.onlyStatistics
-    }));
+    this.setState(prevState => ({ onlyStatistics: !prevState.onlyStatistics }));
   };
-
+  iu;
   // get API function for current weather
   getWeather() {
     fetch(
