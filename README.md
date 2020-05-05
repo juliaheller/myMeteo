@@ -1,4 +1,4 @@
-## Demo video -> https://www.loom.com/share/ba5c812d019843a789d4cce813029b67
+## Demo  -> https://my-meteo-weather-app.herokuapp.com/
 
 An Project from Wild Code School studends.
 
