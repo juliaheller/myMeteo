@@ -1,4 +1,4 @@
-## Demo  -> https://my-meteo-weather-app.herokuapp.com/
+## Demo -> https://my-meteo-weather-app.herokuapp.com/
 
 An Project from Wild Code School studends.
 
